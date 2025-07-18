@@ -1,1 +1,1 @@
-console.log("Learning Typescript!")
+console.log("Learning Typescript!");
