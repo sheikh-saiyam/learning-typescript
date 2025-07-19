@@ -140,5 +140,5 @@ function makeSound(animal: Dog | Cat) {
 const dog = new Dog();
 const cat = new Cat();
 
-makeSound(dog);
-makeSound(cat);
+// makeSound(dog);
+// makeSound(cat);
