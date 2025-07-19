@@ -84,61 +84,61 @@ function display(value: string | number) {
 
 // in operator type guards
 
-type Car = {
-  drive: () => void;
-};
+// type Car = {
+//   drive: () => void;
+// };
 
-type Boat = {
-  sail: () => void;
-};
+// type Boat = {
+//   sail: () => void;
+// };
 
-function move(vehicle: Car | Boat) {
-  if ("drive" in vehicle) {
-    vehicle.drive();
-  } else {
-    vehicle.sail();
-  }
-}
+// function move(vehicle: Car | Boat) {
+//   if ("drive" in vehicle) {
+//     vehicle.drive();
+//   } else {
+//     vehicle.sail();
+//   }
+// }
 
-const car: Car = {
-  drive() {
-    console.log("Car is driving!");
-  },
-};
+// const car: Car = {
+//   drive() {
+//     console.log("Car is driving!");
+//   },
+// };
 
-const boat: Boat = {
-  sail() {
-    console.log("boat is sailing!");
-  },
-};
+// const boat: Boat = {
+//   sail() {
+//     console.log("boat is sailing!");
+//   },
+// };
 
 // move(boat);
 // move(car);
 
 // instanceof type guards
 
-class Dog {
-  bark() {
-    console.log("Gheo Gheo!");
-  }
-}
+// class Dog {
+//   bark() {
+//     console.log("Gheo Gheo!");
+//   }
+// }
 
-class Cat {
-  meow() {
-    console.log("Meow Meow!");
-  }
-}
+// class Cat {
+//   meow() {
+//     console.log("Meow Meow!");
+//   }
+// }
 
-function makeSound(animal: Dog | Cat) {
-  if (animal instanceof Dog) {
-    animal.bark();
-  } else {
-    animal.meow();
-  }
-}
+// function makeSound(animal: Dog | Cat) {
+//   if (animal instanceof Dog) {
+//     animal.bark();
+//   } else {
+//     animal.meow();
+//   }
+// }
 
-const dog = new Dog();
-const cat = new Cat();
+// const dog = new Dog();
+// const cat = new Cat();
 
 // makeSound(dog);
 // makeSound(cat);

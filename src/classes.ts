@@ -14,6 +14,9 @@ class Person {
   }
 }
 
+// const user = new Person("Sheikh Saiyam", 16);
+// user.greet();
+
 //  modifiers (public, private, protected)
 
 class BankAccount {
@@ -31,3 +34,47 @@ class BankAccount {
     console.log("Account balance is: ", this.balance);
   }
 }
+
+// const account1 = new BankAccount("John", 1000);
+// account1.showBalance();
+
+// Inheritance
+
+class Animal {
+  constructor(public name: string) {}
+
+  move() {
+    console.log(`${this.name} is moving`);
+  }
+}
+
+class Dog extends Animal {
+  bark() {
+    console.log("Gheo Gheo!");
+  }
+}
+
+// const dog = new Dog("Yoyo");
+// dog.move();
+// dog.bark();
+
+// implements
+
+interface Drivable {
+  start: () => void;
+  stop: () => void;
+}
+
+class Car implements Drivable {
+  start() {
+    console.log("Car is starting");
+  }
+
+  stop() {
+    console.log("Car is stopped");
+  }
+}
+
+const car = new Car();
+car.start();
+car.stop();
